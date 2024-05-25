@@ -3,6 +3,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,7 +13,7 @@ public class ParserTest {
     public static Parser handle;
 
     @BeforeAll
-    static void setUp() throws IOException {
+    static void setUp() throws IOException, URISyntaxException {
         handle = new Parser();
         handle.setUp();
     }
